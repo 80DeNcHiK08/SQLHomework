@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Orders]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [CustomerId] INT NOT NULL,
 	FOREIGN KEY(CustomerId) REFERENCES Customers(Id),
     [ItemId] INT NOT NULL, 
